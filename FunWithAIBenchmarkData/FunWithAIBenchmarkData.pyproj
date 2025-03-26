@@ -24,6 +24,12 @@
     <Compile Include="dataPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="imagePackage\image.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="imagePackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mainPackage\main.py" />
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
@@ -55,6 +61,7 @@
     <Folder Include="dataPackage\MMLU\" />
     <Folder Include="dataPackage\MMLU\data\" />
     <Folder Include="dataPackage\MMLU\results\" />
+    <Folder Include="imagePackage\" />
     <Folder Include="mainPackage\" />
     <Folder Include="PDFPackage\" />
     <Folder Include="readingLevelPackage\" />
@@ -118,6 +125,7 @@
     <Content Include="dataPackage\MMLU\data\us_foreign_policy_test.csv" />
     <Content Include="dataPackage\MMLU\data\virology_test.csv" />
     <Content Include="dataPackage\MMLU\data\world_religions_test.csv" />
+    <Content Include="imagePackage\image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
