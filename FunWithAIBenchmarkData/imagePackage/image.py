@@ -10,7 +10,10 @@
 # Brief Description of the assignment: The assignment is to add some data visualization into Python project in Visual Studio.
 
 # Brief Description of what this module does: This module reads, resizes, and displays the image of our team's name.
-# Citations: https://chatgpt.com/
+# Citations: https://www.geeksforgeeks.org/reading-images-in-python/
+#            https://www.geeksforgeeks.org/loading-images-in-tkinter-using-pil/
+#            https://stackoverflow.com/questions/273946/how-do-i-resize-an-image-using-pil-and-maintain-its-aspect-ratio
+#            https://stackoverflow.com/questions/24848917/adding-and-removing-image-tkinter-root
 
 # Anything else that's relevant:
 
