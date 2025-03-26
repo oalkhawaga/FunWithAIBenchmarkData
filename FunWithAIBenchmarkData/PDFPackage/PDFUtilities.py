@@ -1,12 +1,12 @@
 # PDFUtilities.py
 # Bill Nicholson
 # nicholdw@ucmail.uc.edu
-
-import reportlab.pdfgen.canvas as canvas
-from reportlab.lib.units import inch
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
-import os
+'''
+#import reportlab.pdfgen.canvas as canvas
+#from reportlab.lib.units import inch
+#from reportlab.lib.styles import getSampleStyleSheet
+#from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
+#import os
 
 class PDFUtilities:
     """
@@ -99,4 +99,4 @@ class PDFUtilities:
         # Save the PDF
         myCanvas.save()
         
-
+        '''

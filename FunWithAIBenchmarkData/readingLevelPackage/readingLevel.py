@@ -1,7 +1,7 @@
 # readingLevel.py
 # Bill Nicholson
 # nicholdw@ucmail.uc.edu
-
+'''
 import contextlib
 import textstat
 from utilitiesPackage.utilities import *
@@ -115,3 +115,4 @@ class Reading_Level:
         ri = Reading_Level.compute_readability_indices("Dummy Benchmark", text)
         for key in ri.keys():
             print(key, ":", ri[key])
+            '''

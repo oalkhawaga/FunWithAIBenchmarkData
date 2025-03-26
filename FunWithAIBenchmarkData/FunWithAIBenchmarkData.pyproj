@@ -24,6 +24,12 @@
     <Compile Include="dataPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataVisualizationPackage\visualization.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataVisualizationPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="imagePackage\image.py">
       <SubType>Code</SubType>
     </Compile>
@@ -46,9 +52,6 @@
     <Compile Include="readingLevelPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="utilitiesPackage\CSV_Utilities.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="utilitiesPackage\utilities.py">
       <SubType>Code</SubType>
     </Compile>
@@ -61,6 +64,7 @@
     <Folder Include="dataPackage\MMLU\" />
     <Folder Include="dataPackage\MMLU\data\" />
     <Folder Include="dataPackage\MMLU\results\" />
+    <Folder Include="DataVisualizationPackage\" />
     <Folder Include="imagePackage\" />
     <Folder Include="mainPackage\" />
     <Folder Include="PDFPackage\" />

@@ -1,5 +1,4 @@
 # image.py
-
 # File Name : image.py
 # Student Name: Kengo Ishizuka
 # email: ishizuko@mail.uc.edu
@@ -14,29 +13,34 @@
 
 # Anything else that's relevant:
 
+# image.py
 from PIL import Image, ImageTk
-
 import tkinter as tk
- 
+
 def resize_image(image_path, max_size=(200, 200)):
     """
-    Reads and resize an image.
-    @param image_path string: The path to the image file.
-    @param max_size int: The size of the image.
+    Reads and resizes an image.
+    @param image_path: str - Path to the image file.
+    @param max_size: tuple - Maximum width and height for resizing.
+    @return: Image object or None if failed.
     """
-    image = Image.open(image_path)
-    image.thumbnail(max_size, Image.LANCZOS)
-    return image
- 
-def display_image(image_path):
+    try:
+        image = Image.open(image_path)
+        image.thumbnail(max_size, Image.LANCZOS)
+        return image
+    except Exception as e:
+        print(f"Error: Unable to open image {image_path}. {e}")
+        return None
+
+def display_image(root, image_path):
     """
-    Displays the image using Tkinter
-    @param filename string: The path to the image file.
+    Displays an image in a Tkinter window.
+    @param root: Tkinter root window.
+    @param image_path: str - Path to the image file.
     """
     image = resize_image(image_path)
-    root = tk.Tk()
-    root.title("Image Viewer")
-    img_tk = ImageTk.PhotoImage(image)
-    label = tk.Label(root, image=img_tk)
-    label.pack()
-    root.mainloop()
+    if image:
+        img_tk = ImageTk.PhotoImage(image)
+        label = tk.Label(root, image=img_tk)
+        label.image = img_tk  # Keep reference to avoid garbage collection
+        label.pack(side=tk.LEFT, padx=10, pady=10)
